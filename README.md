@@ -1,45 +1,66 @@
-# Nova Robot LED Panel Control
+# Nova Robot LED Face Controller
+
+This repository contains the Arduino-based LED panel control system developed for the **Nova Robot**, an open-source interactive robot platform designed for educational and engagement-oriented applications.
+
+The system drives a five-panel 8×8 LED matrix array to display expressive facial animations, enabling the robot to communicate emotions and feedback visually.
+
+---
 
 ## Overview
 
-This repository contains the code and documentation for the LED panel control system developed as part of the Nova Robot project in the Microcontrollers and Embedded Systems course at Amrita Vishwa Vidyapeetham. The Nova Robot is a fully 3D-printed, open-source interactive robot designed to foster engagement and learning in educational, home, and therapeutic settings. The included ledcontrol.ino file is a custom Arduino sketch enabling expressive facial animations on a five-panel 8×8 LED matrix array, forming the robot’s “face.” The code supports multiple eye and mouth expressions, responding to serial commands for dynamic feedback. The repository also documents the assembly process for the LED panels, including wiring and integration with the robot’s electronics. This contribution demonstrates practical skills in embedded programming, hardware assembly, and open-source collaboration, and serves as a resource for students and hobbyists interested in robotics, Arduino, and interactive display systems.
+The controller enables dynamic facial expressions using serial commands, allowing the robot to respond interactively during demonstrations, workshops, and educational activities.
 
-## Repository Structure
+The implementation demonstrates embedded programming, hardware interfacing, and real-time display control using Arduino and MAX7219-based LED matrices.
 
-- **ledcontrol.ino**  
-  Arduino sketch for controlling a five-panel LED matrix array, enabling dynamic eye and mouth expressions via serial commands.
+---
 
-- **/docs/**  
-  (Optional) Add assembly instructions, wiring diagrams, and integration notes here.
+## Features
 
-## Key Features
+- Multiple facial expressions (neutral, happy, sad, surprised, etc.)
+- Serial command interface for real-time control
+- Designed for five chained MAX7219 8×8 LED matrices
+- Modular and extendable animation framework
+- Lightweight implementation suitable for low-power microcontrollers
 
-- Supports multiple facial expressions (neutral, happy, sad, surprised, etc.)
-- Serial command interface for real-time control of eyes and mouth
-- Designed for MAX7219-based 8×8 LED matrices (x5)
-- Easily extendable for new animations or expressions
+---
 
-## Assembly Highlights
+## Hardware Setup
 
-- Five 8×8 LED matrices are connected in series and mounted to form the robot’s face
-- Arduino UNO is used for driving the panels, with connections for DIN, CLK, and CS pins
-- Careful orientation and wiring ensure correct panel sequencing and animation flow
+- Arduino UNO
+- Five MAX7219-based 8×8 LED matrices connected in series
+- DIN, CLK, and CS pins wired as specified in the sketch comments
+- Panels arranged to form the robot’s facial display
 
-## How to Use
+Proper orientation and wiring are required to ensure correct animation alignment.
 
-1. Connect five MAX7219-based 8×8 LED matrices to an Arduino UNO as per the wiring in the code comments.
+---
+
+## Usage
+
+1. Connect the LED matrices to the Arduino.
 2. Upload `ledcontrol.ino` using the Arduino IDE.
-3. Send serial commands to the Arduino to change facial expressions.
+3. Send serial commands to trigger expressions.
+
+The controller can be integrated with higher-level robot software to enable expressive behavior.
+
+---
 
 ## Applications
 
-- Educational robotics
-- Interactive displays for STEM workshops
-- Open-source hardware projects
+- Educational robotics platforms  
+- Interactive display systems  
+- Robotics demonstrations and workshops  
+- Human–robot interaction experiments  
 
-## Acknowledgments
+---
 
-- LED control and assembly: Adithya Pothula
-- Project developed at Amrita School of Engineering, Amritapuri Campus
+## Contributors
 
-## License
+Adithya Pothula  
+Siddanth Bhogoju  
+
+---
+
+## Notes
+
+This repository contains the LED display module developed for the Nova Robot platform and is preserved as a reusable embedded subsystem for future robotics and interaction projects.
