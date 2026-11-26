@@ -27,7 +27,7 @@ Arduino sketch that drives the LED face of the **Nova Robot**, an interactive 3D
 |---|---|
 | 0 | left eye |
 | 1 | right eye |
-| 2, 3, 4 | mouth (left, centre, right) |
+| 2, 3, 4 | mouth: rows 1–8, 9–16 and 17–24 of the 24-row mouth bitmap |
 
 The face bitmaps are stored rotated 90° counter-clockwise, because the sketch writes them with `setRow()` (faster than `setColumn()`). If a panel looks sideways or mirrored, rotate that module rather than editing the bitmaps.
 
