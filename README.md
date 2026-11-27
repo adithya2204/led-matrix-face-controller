@@ -69,14 +69,17 @@ Any other character is ignored. Anything that can write to a serial port can dri
 
 The Nova Robot was a fifth-semester project for *21ARE302 Microcontrollers and Embedded Systems* (B.Tech Automation and Robotics Engineering, Amrita Vishwa Vidyapeetham, Amritapuri). The robot combined a 3D-printed body, servo-driven arms and shoulders, Bluetooth motion control, a mobile-app interface with a chatbot, and this LED face. The full write-up, including the hardware problems the team ran into, is in [`docs/nova-robot-project-report.pdf`](docs/nova-robot-project-report.pdf).
 
+![Nova Robot system overview: phone, laptop and web interface connected to the robot over Wi-Fi](images/nova-system-overview.png)
+
 ## Repository layout
 
 ```
 led-matrix-face-controller/
 ├── led_control/
 │   └── led_control.ino                 # the sketch
-└── docs/
-    └── nova-robot-project-report.pdf   # course project report
+├── docs/
+│   └── nova-robot-project-report.pdf   # course project report
+└── images/                             # figures for this README
 ```
 
 ## Credits
